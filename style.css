@@ -1,0 +1,42 @@
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.nav-item:hover {
+    background-color: #881919;
+}
+
+.content-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+h1{
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+    background-color: #881919;
+}
+h2 {
+    text-align: center;
+    background-color: #881919;
+}
+img{
+    width: 100px;
+    display: block;
+}
