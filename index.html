@@ -1,44 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Hardo Digital Center</title>
-    <link rel="stylesheet" href="STYLE/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hardo Digital | Spotify Premium Top Up</title>
+  <link rel="stylesheet" href="STYLE/style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div>
-            <h1 style="color: white;">WELCOME TO</h1>
-            <H2 style="color: aliceblue;">HARDO DIGITAL CENTER</H2> 
-        </div>
-
-        <div class="nav-item">
-            <img src="passport.jpg" alt="logo">
-        <div class="container">
-            <a href="#Our Services" class="nav-item">Our Services</a>
-            <a href="#digital-marketing" class="nav-item">Digital Marketing</a>
-            <a href="#graphic-design" class="nav-item">Graphic Design</a>
-            <a href="#portfolio" class="nav-item">Portfolio</a>
-            <a href="STYLE/about.html" class="nav-item">Home About Us</a>
-        </div>
+  <header class="hero" id="home">
+    <nav class="navbar container">
+      <h1 class="brand">Hardo Digital</h1>
+      <div class="nav-links">
+        <a href="#prices">Price List</a>
+        <a href="#payment">Payment</a>
+        <a href="#faq">FAQ</a>
+        <a href="#payment" class="btn btn-small">Top Up Now</a>
+      </div>
     </nav>
 
-    <section id="Our Services" class="content-section">
+    <div class="hero-content container">
+      <p class="tag">Spotify Premium Top Up</p>
+      <h2>Fast Spotify Premium Subscription Top Up</h2>
+      <p class="subtitle">Choose a plan, complete payment, and send your Spotify email for quick activation.</p>
+      <a href="#prices" class="btn">See All Plans</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="prices" class="section container">
+      <h3>Price List</h3>
+      <div class="cards">
+        <article class="card featured">
+          <span class="badge">Spotify Individual</span>
+          <h4>Spotify Individual</h4>
+          <ul class="plan-list">
+            <li><span>1 month</span><strong>$2.00</strong></li>
+            <li><span>3 months</span><strong>$4.50</strong></li>
+            <li><span>6 months</span><strong>$7.80</strong></li>
+            <li><span>12 months</span><strong>$16.00</strong></li>
+          </ul>
+          <a href="#payment" class="btn">Buy Individual</a>
+        </article>
+
+        <article class="card">
+          <h4>Spotify Duo</h4>
+          <ul class="plan-list">
+            <li><span>6 months</span><strong>$11.00</strong></li>
+            <li><span>12 months</span><strong>$21.00</strong></li>
+          </ul>
+          <a href="#payment" class="btn btn-outline">Buy Duo</a>
+        </article>
+
+        <article class="card">
+          <h4>Hardo Digital Plan</h4>
+          <ul class="plan-list">
+            <li><span>1 month</span><strong>$2.50</strong></li>
+            <li><span>3 months</span><strong>$5.50</strong></li>
+          </ul>
+          <a href="#payment" class="btn btn-outline">Buy Hardo Plan</a>
+        </article>
+      </div>
     </section>
 
-    <section id="digital-marketing" class="content-section">
-       
+    <section id="payment" class="section alt-bg">
+      <div class="container payment-grid">
+        <div>
+          <h3>Payment Options</h3>
+          <p>After payment, send your receipt + Spotify email/username to support for activation.</p>
+          <ul class="payment-list">
+            <li>PayPal: <a href="https://paypal.me/hardodigital" target="_blank" rel="noopener noreferrer">paypal.me/hardodigital</a></li>
+            <li>Binance Pay ID: <strong>HARDO-DIGITAL-2201</strong></li>
+            <li>USDT (TRC20): <strong>TQExampleWallet1234567890</strong></li>
+          </ul>
+          <p class="note">Replace wallet and Binance ID with your real payment details before going live.</p>
+        </div>
+
+        <form class="order-form" action="mailto:sales@hardodigital.com" method="post" enctype="text/plain">
+          <h4>Quick Order Form</h4>
+
+          <label for="plan">Choose Plan</label>
+          <select id="plan" name="Plan" required>
+            <option value="">Select a plan</option>
+            <option>Spotify Individual - 1 month ($2.00)</option>
+            <option>Spotify Individual - 3 months ($4.50)</option>
+            <option>Spotify Individual - 6 months ($7.80)</option>
+            <option>Spotify Individual - 12 months ($16.00)</option>
+            <option>Spotify Duo - 6 months ($11.00)</option>
+            <option>Spotify Duo - 12 months ($21.00)</option>
+            <option>Hardo Digital - 1 month ($2.50)</option>
+            <option>Hardo Digital - 3 months ($5.50)</option>
+          </select>
+
+          <label for="email">Spotify Email / Username</label>
+          <input id="email" name="Spotify Account" type="text" placeholder="yourspotify@email.com" required>
+
+          <label for="method">Payment Method</label>
+          <select id="method" name="Payment Method" required>
+            <option value="">Select payment method</option>
+            <option>PayPal</option>
+            <option>Binance Pay</option>
+            <option>USDT (TRC20)</option>
+          </select>
+
+          <label for="tx">Payment Transaction ID</label>
+          <input id="tx" name="Transaction ID" type="text" placeholder="Enter payment ID" required>
+
+          <button type="submit" class="btn">Submit Order</button>
+        </form>
+      </div>
     </section>
 
-    <section id="graphic-design" class="content-section">
-
+    <section id="faq" class="section container">
+      <h3>Frequently Asked Questions</h3>
+      <details>
+        <summary>How long does activation take?</summary>
+        <p>Normally 5–30 minutes after payment is confirmed.</p>
+      </details>
+      <details>
+        <summary>Do I need to share password?</summary>
+        <p>No, only Spotify email/username is needed for top up.</p>
+      </details>
+      <details>
+        <summary>How do I contact support?</summary>
+        <p>Email: <a href="mailto:sales@hardodigital.com">sales@hardodigital.com</a></p>
+      </details>
     </section>
+  </main>
 
-    <section id="portfolio" class="content-section">
-     
-    </section>
-
-    <section id="about-us" class="content-section">
-    
-    </section>
+  <footer>
+    <div class="container footer-content">
+      <p>© 2026 Hardo Digital. Spotify Premium Top Up Store.</p>
+      <p class="disclaimer">Spotify is a trademark of Spotify AB. Hardo Digital is an independent seller.</p>
+    </div>
+  </footer>
 </body>
 </html>
